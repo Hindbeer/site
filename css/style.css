@@ -1,75 +1,86 @@
-html {
-    background-color: #060606;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+
+body{
+    margin: 0;
+    background-color: #131313;
 }
 
-body {
-    text-align: center;
-    display:flex; flex-direction:column; justify-content:center;
-    min-height:100vh;
+p{
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+    font-size: 64px;
+    margin: 0;
 }
 
-.main {
+a{
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover{
+    color: #EDCE29;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #131313;
+    font-family: Inter;
+    padding: 0px;
+    border-bottom: 1px solid #EDCE29;
+    
+}
+
+.header__section{
+    display: flex;
+    align-items: center;
+}
+
+.headerlogo{
+    padding: 14px 0px 14px 24px;
+    width: 42px;
+    height: 42px;
+}
+
+.headerButton{
+    font-size: 14px;
+    padding-left: 42px;
+}
+
+.description{
     display: flex;
     justify-content: center;
     align-items: flex-start;
 }
 
-.text {
-    align-self: center;
-    text-align: left;
-    margin-left: 48px;
+.links{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
 }
 
-.main-text {
-    font-family: Roboto;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-top: 0px;
-    margin-bottom: 18px;
-    font-size: 64px;
-    font-style: normal;
-    font-weight: bold;
-	color: white;
-    
+.link a{
+    color: #AAAAAA;
+    margin: 42px;
 }
 
-.description-text {
-    margin: 0px;
-    font-size: 64px;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    color: white;
-}
-
-.description-text a {
+.description__text a{
     color: #EDCE29;
-    text-decoration: none;
 }
 
-.links {
-    margin-top: 20px;
-    margin-bottom: 18px;
+.image img{
+    width: 236;
+    height: 236;
+    margin: 50% 0;
 }
 
-.links a {
-    text-decoration: none;
-    margin-left: 18px;
-    margin-right: 18px;
+.main__text{
+    padding-bottom: 16px;
 }
 
-.links a img{
-    text-decoration: none;
-    transition: 0.30s;
-    opacity: 0.48;
-}
-
-
-.links a img:hover {
-    text-decoration: none;
-    opacity: 1;
-    margin-left: 10px;
-    margin-right: 10px;
-    transition: 0.16s;
-    transform: scale(1.1);
+.text{
+    margin: auto 0;
+    padding-left: 3%;
 }
